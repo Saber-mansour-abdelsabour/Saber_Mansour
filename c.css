@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+header{
+
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bgcoler: #080e1c;
+    --textw: #fff;
+}
+
+section {
+    background-color: var(--bgcoler);
+    height: 100vh;
+    overflow: hidden;
+}
+
+section header nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+section header nav .logo {
+    color: var(--textw);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+section header nav .logo span {
+    color: #32a3fe;
+}
+
+section header nav .link a {
+    color: var(--textw);
+    margin: 0 30px;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+section header nav .link a:hover {
+    color: #32a3fe;
+}
+
+section header nav .btn {
+    color: var(--textw);
+    font-size: 18px;
+}
+
+section .cont {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    height: calc(100vh - 100px);
+    position: relative;
+}
+
+section .cont .text {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 50%;
+    left: 0;
+    top: 50%;
+}
+
+section .cont .im {
+    position: absolute;
+    width: 34%;
+    bottom: -5px;
+    margin-right: 50px;
+}
+
+section .cont .im img {
+    width: 100%;
+}
+
+section .cont .text h4 {
+    color: #888;
+    font-size: 22px;
+}
+
+section .cont .text h1 {
+    color: var(--textw);
+    font-size: 60px;
+    margin: 15px 0 10px;
+}
+
+section .cont .text span {
+    color: #32a3fe;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section .cont .text p {
+    color: var(--textw);
+    line-height: 1.2;
+    margin: 20px 0 40px;
+}
+
+section .cont .text .bot {
+    color: #fff;
+    background: #32a3fe;
+    padding: 15px 30px;
+    border: 1px solid #32a3fe;
+    transition: 0.3s;
+    position: relative;
+}
+
+section .cont .text .bot:hover {
+    top: -8px;
+    box-shadow: 0 0 0 3px #32a3fe;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon a {
+    color: #32a3fe;
+    font-size: 24px;
+    transition: .3s;
+}
+
+.icon a:hover {
+    transform: scale(1.2);
+}
+
+#skills {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#skills h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #32a3fe;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.skills-list li {
+    background: #0f172a;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #32a3fe;
+    transition: 0.3s;
+    min-width: 120px;
+}
+
+.skills-list li:hover {
+    background: #32a3fe;
+    color: #0f172a;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(50,163,254,0.6);
+}
+
+#About {
+    background: #0f172a;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#About h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #32a3fe;
+}
+
+#About p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+#Contact {
+    background: #080e1c;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#Contact h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #32a3fe;
+}
+
+#Contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Contact input {
+    padding: 15px;
+    border: 2px solid #32a3fe;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #fff;
+    font-size: 16px;
+}
+
+#Contact input:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 8px rgba(50,163,254,0.6);
+}
+
+#Contact button {
+    padding: 15px;
+    background: #32a3fe;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Contact button:hover {
+    background: #2196f3;
+    transform: translateY(-3px);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    section header nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    section header nav .link a {
+        margin: 10px 15px;
+        font-size: 16px;
+    }
+    section .cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section .cont .text {
+        width: 80%;
+        text-align: center;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 30px;
+    }
+    section .cont .im {
+        position: relative;
+        width: 60%;
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    section header nav .logo {
+        font-size: 28px;
+    }
+    section header nav .link a {
+        margin: 8px;
+        font-size: 14px;
+    }
+    section .cont .text h1 {
+        font-size: 36px;
+    }
+    section .cont .text h4 {
+        font-size: 18px;
+    }
+    section .cont .text span {
+        font-size: 20px;
+    }
+    section .cont .text p {
+        font-size: 14px;
+    }
+    section .cont .text .bot {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    section .cont .im {
+        width: 80%;
+    }
+    .icon {
+        right: 10px;
+        gap: 15px;
+    }
+    .icon a {
+        font-size: 20px;
+    }
+    #skills h2 {
+        font-size: 28px;
+    }
+    .skills-list li {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    #About h2 {
+        font-size: 28px;
+    }
+    #About p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+}
